@@ -159,7 +159,7 @@ python evaluate/evaluate_viterbi_vs_mask.py -
 ```bibtex
 @article{ecg_digitization_2026,
   title   = {Automated 12-lead ECG digitization and WFDB standardization: insights from Vietnamese clinical data},
-  author  = {Nguyen, Thai Nho and Doan, Van Thang and Nguyen, Ngoc Dung and Ho, Van Hai},
+  author  = {Nho Thai Nguyen,  Thang Van Doan, Dung Ngoc Nguyen and Van Hai Ho},
   journal = {Journal},
   year    = {2026}
 }
