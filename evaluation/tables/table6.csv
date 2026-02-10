@@ -1,0 +1,11 @@
+Criteria,YOLOv12,Note
+mAP,95.10%,Mean Average Precision @IoU=0.5
+Precision,94.62%,Correct predictions / total predictions
+Recall,93.66%,Correct detections / ground truth
+F1-score,95.10%,Harmonic mean of precision and recall
+Inference Time (ms),2434710.00 ms,Average time per image inference
+FPS,0.00 FPS,Frames per second during inference
+Model Parameters (M),11,Total number of model parameters
+Model Size (MB),4.9,Size of the .pt model file
+Validation Loss,2.9118,"Sum of box, class, and DFL loss on validation set"
+Test Accuracy,95.74%,mAP@0.5 as a proxy for accuracy on test set

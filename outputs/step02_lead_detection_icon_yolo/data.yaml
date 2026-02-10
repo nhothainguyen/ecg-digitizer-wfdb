@@ -1,0 +1,13 @@
+train: ../S_final-2/train/images
+val: ../S_final-2/valid/images
+test: ../S_final-2/test/images
+
+nc: 12
+names: ['I', 'II', 'III', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'aVF', 'aVL', 'aVR']
+
+roboflow:
+  workspace: nhandang-7mxnq
+  project: s_final
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/nhandang-7mxnq/s_final/dataset/2

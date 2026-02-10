@@ -1,0 +1,13 @@
+File,Background,Coverage (%),MAE (px),Hausdorff Distance,ASSD,IoU,Dice
+aVL.jpg,dot_grid,95.82,0.9,12.0,0.85,1.0,1.0
+V2.jpg,dot_grid,91.83,2.16,21.1,1.01,1.0,1.0
+V5.jpg,dot_grid,88.97,3.5,45.1,1.33,1.0,1.0
+II.jpg,dot_grid,93.52,1.79,20.1,0.91,1.0,1.0
+V6.jpg,dot_grid,89.83,3.04,40.11,1.24,1.0,1.0
+V3.jpg,dot_grid,91.49,2.45,22.0,1.32,1.0,1.0
+aVF.jpg,dot_grid,95.54,1.19,18.0,0.89,1.0,1.0
+III.jpg,dot_grid,93.87,1.57,23.0,0.98,1.0,1.0
+I.jpg,dot_grid,95.84,1.11,11.4,0.86,1.0,1.0
+aVR.jpg,dot_grid,95.76,1.1,20.0,0.89,1.0,1.0
+V1.jpg,dot_grid,95.77,0.88,13.0,0.87,1.0,1.0
+V4.jpg,dot_grid,88.37,3.26,41.0,1.21,1.0,1.0

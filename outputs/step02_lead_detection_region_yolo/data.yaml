@@ -1,0 +1,13 @@
+train: ../F_v3-1/train/images
+val: ../F_v3-1/valid/images
+test: ../F_v3-1/test/images
+
+nc: 12
+names: ['I', 'II', 'III', 'V1', 'V2', 'V3', 'V4', 'V5', 'V6', 'aVF', 'aVL', 'aVR']
+
+roboflow:
+  workspace: nph
+  project: f_v3
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/nph/f_v3/dataset/1
