@@ -57,3 +57,5 @@ evaluation/tables/
 .vscode/
 .idea/
 .DS_Store
+# Ignore all .pkl data files in nested data folders
+**/data/*.pkl
