@@ -1,0 +1,6 @@
+mkdir -p data results outputs evaluation
+
+touch data/.gitkeep
+touch results/.gitkeep
+touch outputs/.gitkeep
+touch evaluation/.gitkeep

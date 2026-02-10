@@ -6,17 +6,20 @@ __pycache__/
 *.pyo
 
 # ===============================
-# Cython / Core source (IP)
+# Cython / Compiled core (IP protection)
 # ===============================
 core_binary/*.pyx
 core_binary/*.c
 core_binary/*.cpp
+core_binary/*.so
+core_binary/*.pyd
 
 # ===============================
 # Build artifacts
 # ===============================
 build/
 dist/
+*.egg-info/
 
 # ===============================
 # Virtual environments
@@ -25,15 +28,32 @@ dist/
 venv/
 
 # ===============================
-# Data & outputs
+# Runtime data & pipeline outputs
+# (DO NOT commit real data/results)
 # ===============================
-data/
-outputs/
-results/
-evaluation/
+data/*
+outputs/*
+results/*
+
+# Keep directory structure
+!data/.gitkeep
+!outputs/.gitkeep
+!results/.gitkeep
+
+# ===============================
+# Evaluation
+# ===============================
+# Keep evaluation scripts
+evaluation/*.py
+
+# Ignore generated evaluation outputs (if any)
+evaluation/results/
+evaluation/figures/
+evaluation/tables/
 
 # ===============================
 # IDE / Editor
 # ===============================
 .vscode/
 .idea/
+.DS_Store
