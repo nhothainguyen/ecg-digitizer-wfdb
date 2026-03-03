@@ -55,7 +55,6 @@ from public.wrapper.print_ecg_wfdb.gen_ecg_image_from_data import run_single_fil
 # Frozen argument object
 # =================================================
 class _FrozenArgs:
-    class _FrozenArgs:
         def __init__(self):
             # ---- core ----
             self.seed = 0
