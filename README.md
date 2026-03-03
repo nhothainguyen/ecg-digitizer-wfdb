@@ -116,19 +116,21 @@ To run the **full ECG digitization pipeline** with default configuration:
 ```bash
 python wrapper/run_step01_grid_detection.py --input data/example_inputs --output results/step01_grid_detection_and_dpi
 
-python wrapper/run_step02_lead_detection_region.py --input results/step01_grid_detection_and_dpi --output results/step02_region
+python wrapper/run_step02_lead_detection_region.py --input results/step01_grid_detection_and_dpi --output results/step02_lead_detection_region
 python wrapper/run_step02_lead_detection_icon.py --input results/step01_grid_detection_and_dpi --output results/step02_icon
-python wrapper/run_step02_auto_crop.py --input results/step01_grid_detection_and_dpi --output results/step02_auto_crop
+python wrapper/run_step02_auto_crop.py --input results/step01_grid_detection_and_dpi --output results/step02_lead_auto_crop
 
-python wrapper/run_step03_signal_cleanup_and_mask.py --input results/step02_auto_crop/segments_test --output results/step03
+python wrapper/run_step03_signal_cleanup_and_mask.py --input results/step02_lead_auto_crop/segments --output results
+
+python wrapper/run_step04_centerline_proposed.py --input results --output results/step04_centerline_proposed
 
 python wrapper/run_step04_viterbi.py --input results/step02_auto_crop/segments_test --output results/step04_digitized_viterbi
-python wrapper/run_step04_centerline_proposed.py --input results/step02_auto_crop/segments_test --output results/step04_centerline_proposed
 
 python wrapper/run_step05_waveform_extraction.py --input results/step04_centerline_proposed --output results/step05_waveform_extraction
 
 python wrapper/run_step06_wfdb_export.py --input results/step05_waveform_extraction --output results/step06_wfdb_export
 python wrapper/run_step06_wfdb_print.py --input results/step06_wfdb_export --output results/step06
+
 ```
 
 ---
