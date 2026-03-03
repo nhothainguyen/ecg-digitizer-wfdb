@@ -83,7 +83,7 @@ def resolve_pipeline_root(user_input: Path) -> Path:
       - outputs/
       - outputs/step03_signal_cleanup_and_mask
       - outputs/step02_lead_auto_crop
-      - outputs/step02_lead_auto_crop/segments_test
+      - outputs/step02_lead_auto_crop/segments
 
     Returns:
       - outputs/
@@ -95,8 +95,8 @@ def resolve_pipeline_root(user_input: Path) -> Path:
        (p / "step03_signal_cleanup_and_mask").exists():
         return p
 
-    # Case 2: .../outputs/step02_lead_auto_crop/segments_test
-    if p.name == "segments_test":
+    # Case 2: .../outputs/step02_lead_auto_crop/segments
+    if p.name == "segments":
         return p.parents[1]   # ✅ outputs/
 
     # Case 3: .../outputs/step02_lead_auto_crop
@@ -133,7 +133,7 @@ def main():
     pipeline_root = resolve_pipeline_root(user_input)
 
     mask_dir = pipeline_root / "step03_signal_cleanup_and_mask"
-    lead_dir = pipeline_root / "step02_lead_auto_crop" / "segments_test"
+    lead_dir = pipeline_root / "step02_lead_auto_crop" / "segments"
 
     if not mask_dir.exists():
         raise FileNotFoundError(f"Missing mask directory: {mask_dir}")
